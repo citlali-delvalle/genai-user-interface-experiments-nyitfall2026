@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 70px 20px;
+    background: #f4edda;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #8a5a16;
+    text-shadow: 1px 1px 0 #d8b45a;
+}
+
+.klimt-button {
+    position: relative;
+    padding: 22px 70px;
+    border: 3px solid #b88620;
+    border-radius: 60px;
+    cursor: pointer;
+
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            #b51f1f 0 7px,
+            transparent 8px
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            #b51f1f 0 6px,
+            transparent 7px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            transparent 0 10px,
+            rgba(70, 45, 10, 0.35) 11px 13px,
+            transparent 14px 24px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0 16px,
+            rgba(255, 236, 150, 0.35) 17px 20px,
+            transparent 21px 30px
+        ),
+        linear-gradient(
+            135deg,
+            #8c5b10,
+            #f5d76e,
+            #b98219,
+            #ffe99a,
+            #9b6814
+        );
+
+    color: #211507;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    box-shadow:
+        0 5px 0 #6b430c,
+        0 10px 25px rgba(90, 55, 10, 0.35),
+        inset 0 2px 5px rgba(255, 255, 220, 0.7),
+        inset 0 -4px 8px rgba(80, 45, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+}
+
+.klimt-button:hover {
+    transform: translateY(-5px) scale(1.04);
+    filter: brightness(1.12);
+
+    box-shadow:
+        0 8px 0 #6b430c,
+        0 15px 35px rgba(90, 55, 10, 0.45),
+        inset 0 2px 5px rgba(255, 255, 220, 0.8),
+        inset 0 -4px 8px rgba(80, 45, 0, 0.3);
+}
+
+.klimt-button:active {
+    transform: translateY(3px) scale(0.98);
+}
